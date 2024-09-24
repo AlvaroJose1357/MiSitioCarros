@@ -5,9 +5,8 @@
 }
 
 body {
-  /* background-color: aquamarine; */
-  /* background-image: url("../img/fondo.jpg");
-  background-size: cover; */
+  background-image: url("../img/fondoRolls-Royce.jpg");
+  background-size: cover;
 }
 /* aqui se coloca el efecto hover del nav */
 .navbar {
