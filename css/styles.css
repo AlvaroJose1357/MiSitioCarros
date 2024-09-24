@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background-color: aquamarine; */
+  /* background-image: url("../img/fondo.jpg");
+  background-size: cover; */
+}
+/* aqui se coloca el efecto hover del nav */
+.navbar {
+  padding: 0;
+}
+.navbar a {
+  font-weight: 600;
+  font-size: 18px;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #919191;
+  border-radius: 30px;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 1em;
+  transition: all 0.7s;
+}
+
+.carousel-item {
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición */
+  left: 50%;
+}
+
+.services {
+  padding: 50px 0;
+}
+
+.bg-car1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/c1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-car2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/c2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-car3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/c3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-icons i {
+  font-size: 50px;
+}
+
+.box-icons h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.preguntas {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.25);
+  transition: transform 0.5s ease;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.banner img {
+  width: 500px;
+}
+.links a img {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .banner img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel-caption h5 {
+    font-size: 55px;
+    font-weight: 500;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .carousel-caption h5 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+}
