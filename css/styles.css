@@ -17,7 +17,6 @@ body {
   font-size: 18px;
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: #fff;
   background-color: #919191;
   border-radius: 30px;
 }
@@ -158,4 +157,28 @@ body {
     font-weight: 300;
     margin-bottom: 25px;
   }
+}
+
+@media (max-width: 600px) {
+  .carousel-caption h5 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+}
+
+body.tematica {
+  background-attachment: fixed; /* Evita que el fondo se redimensione */
+  background-size: cover; /* Mantiene la imagen de fondo cubriendo toda la pantalla */
+}
+
+.accordion-button {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 fill=%22white%22 class=%22bi bi-chevron-down%22 viewBox=%220 0 16 16%22%3E%3Cpath fill-rule=%22evenodd%22 d=%22M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%22/%3E%3C/svg%3E");
+}
+.accordion-button:not(.collapsed)::after {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 fill=%22white%22 class=%22bi bi-chevron-up%22 viewBox=%220 0 16 16%22%3E%3Cpath fill-rule=%22evenodd%22 d=%22M1.646 11.354a.5.5 0 0 1 .708 0L8 5.707l5.646 5.647a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1-.708 0l-6 6a.5.5 0 0 1 0-.708z%22/%3E%3C/svg%3E");
 }
