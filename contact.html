@@ -103,13 +103,15 @@
               <div class="row">
                 <!-- Nombre -->
                 <div class="col-md-12">
-                  <div class="mb-3">
+                  <div class="mb-3 form-floating">
                     <input
                       type="text"
                       class="form-control"
+                      id="floatingInput"
                       placeholder="Ingresa tu Nombre"
                       required
                     />
+                    <label for="floatingInput">Ingresa tu nombre</label>
                     <div class="invalid-feedback">
                       Error! Por favor coloca tu nombre.
                     </div>
@@ -118,13 +120,15 @@
 
                 <!-- Apellido -->
                 <div class="col-md-12">
-                  <div class="mb-3">
+                  <div class="mb-3 form-floating">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Ingresa tu Apellido"
+                      id="floatingInput"
                       required
                     />
+                    <label for="floatingInput">Ingresa tu apellido</label>
                     <div class="invalid-feedback">
                       Error! Por favor coloca tu apellido.
                     </div>
@@ -133,13 +137,15 @@
 
                 <!-- Correo -->
                 <div class="col-md-12">
-                  <div class="mb-3">
+                  <div class="mb-3 form-floating">
                     <input
                       type="email"
                       class="form-control"
                       placeholder="Ingresa tu Correo"
+                      id="floatingInput"
                       required
                     />
+                    <label for="floatingInput">Ingresa tu correo</label>
                     <div class="invalid-feedback">
                       Error! Por favor coloca tu correo.
                     </div>
@@ -148,15 +154,17 @@
 
                 <!-- Teléfono -->
                 <div class="col-md-12">
-                  <div class="mb-3">
+                  <div class="mb-3 form-floating">
                     <input
                       type="tel"
                       class="form-control"
                       placeholder="Ingresa tu Número de Teléfono"
+                      id="floatingInput"
                       pattern="[0-9]{10}"
                       title="Debe contener 10 dígitos"
                       required
                     />
+                    <label for="floatingInput">Ingresa tu teléfono</label>
                     <div class="invalid-feedback">
                       Error! Por favor coloca un número de teléfono válido.
                     </div>
@@ -165,9 +173,10 @@
 
                 <!-- Selección de tema -->
                 <div class="col-md-12">
-                  <div class="mb-3">
+                  <div class="mb-3 form-floating">
                     <select
                       class="form-select"
+                      id="floatingSelect"
                       required
                     >
                       <option
@@ -181,6 +190,7 @@
                       <option value="ventas">Información sobre Ventas</option>
                       <option value="otros">Otros</option>
                     </select>
+                    <label for="floatingSelect">Tema de tu mensaje</label>
                     <div class="invalid-feedback">
                       Error! Por favor selecciona un tema.
                     </div>
@@ -189,13 +199,17 @@
 
                 <!-- Mensaje -->
                 <div class="col-md-12">
-                  <div class="mb-3">
+                  <div class="mb-3 form-floating">
                     <textarea
                       rows="3"
                       class="form-control"
                       placeholder="Ingresa tu Mensaje o Comentario"
+                      id="floatingTextarea"
                       required
                     ></textarea>
+                    <label for="floatingTextarea"
+                      >Ingresa tu mensaje o comentario</label
+                    >
                     <div class="invalid-feedback">
                       Error! Por favor coloca tu mensaje.
                     </div>
